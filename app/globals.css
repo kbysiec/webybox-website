@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: 250 250 252;
+    --fg: 52 28 77;
+    --card: 255 255 255;
+    --card-hover: 250 248 252;
+    --border: 225 222 230;
+    --muted: 239 237 241;
+    --accent: 188 150 228;
+    --accent-fg: 52 28 77;
+  }
+
+  .dark {
+    --bg: 24 22 28;
+    --fg: 239 237 241;
+    --card: 36 33 40;
+    --card-hover: 48 44 54;
+    --border: 66 61 72;
+    --muted: 48 44 54;
+    --accent: 188 150 228;
+    --accent-fg: 24 22 28;
+  }
+
+  body {
+    @apply bg-neutral-50 text-brand-ink-950 antialiased transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-[#181620] text-neutral-100;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
