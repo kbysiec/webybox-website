@@ -52,6 +52,9 @@ const config: Config = {
       animation: {
         "fade-in": "fade-in 0.5s ease-out",
         "slide-up": "slide-up 0.5s ease-out",
+        float: "float 20s ease-in-out infinite",
+        "float-delayed": "float-delayed 25s ease-in-out infinite",
+        "float-slow": "float-slow 30s ease-in-out infinite",
       },
       keyframes: {
         "fade-in": {
@@ -61,6 +64,20 @@ const config: Config = {
         "slide-up": {
           "0%": { transform: "translateY(20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0) translateX(0)" },
+          "33%": { transform: "translateY(-30px) translateX(20px)" },
+          "66%": { transform: "translateY(-15px) translateX(-20px)" },
+        },
+        "float-delayed": {
+          "0%, 100%": { transform: "translateY(0) translateX(0)" },
+          "33%": { transform: "translateY(25px) translateX(-25px)" },
+          "66%": { transform: "translateY(-20px) translateX(15px)" },
+        },
+        "float-slow": {
+          "0%, 100%": { transform: "translateY(0) translateX(0) scale(1)" },
+          "50%": { transform: "translateY(-20px) translateX(20px) scale(1.05)" },
         },
       },
     },
