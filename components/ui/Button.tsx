@@ -16,7 +16,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       "disabled:pointer-events-none disabled:opacity-50",
       "active:scale-95",
       {
-        "bg-green-600 text-white hover:bg-green-700 shadow-lg shadow-green-600/25":
+        "bg-brand-violet-400 text-brand-ink-950 hover:bg-brand-violet-500 shadow-lg shadow-brand-violet-400/25":
           variant === "primary",
         "bg-brand-mint-500 text-white hover:bg-brand-mint-500/90 shadow-lg shadow-brand-mint-500/25":
           variant === "secondary",
