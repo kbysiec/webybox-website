@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import Image from "next/image";
+import { WebyboxIcon } from "@/components/WebyboxIcon";
 
 export function Hero() {
   return (
@@ -63,14 +63,7 @@ export function Hero() {
 
               {/* Logo Icon */}
               <div className="relative z-10 flex h-full w-full items-center justify-center">
-                <Image
-                  src="/icon.svg"
-                  alt="Webybox"
-                  width={256}
-                  height={256}
-                  className="w-48 h-auto md:w-64 drop-shadow-2xl"
-                  priority
-                />
+                <WebyboxIcon className="w-48 h-auto md:w-64 drop-shadow-2xl animate-logo-float" />
               </div>
             </div>
           </div>

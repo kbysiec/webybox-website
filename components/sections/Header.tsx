@@ -3,6 +3,7 @@
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { WebyboxIcon } from "@/components/WebyboxIcon";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -33,14 +34,7 @@ export function Header() {
             className="flex items-center gap-3 transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-violet-400 focus-visible:ring-offset-2 rounded-lg"
             aria-label="Webybox home"
           >
-            <Image
-              src="/icon.svg"
-              alt="Webybox icon"
-              width={32}
-              height={32}
-              className="h-8 w-8"
-              priority
-            />
+            <WebyboxIcon className="h-8 w-8" />
             <Image
               src="/name.svg"
               alt="webybox"
