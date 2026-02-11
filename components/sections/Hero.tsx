@@ -11,14 +11,12 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-violet-50 via-purple-50 to-pink-50/30 dark:from-[#0a0a0f] dark:via-[#1a0f2e] dark:to-[#0f0a15]" />
 
         {/* Floating shapes - LIGHT MODE */}
-        <div className="absolute top-20 left-10 w-[600px] h-[600px] bg-gradient-to-br from-brand-violet-400/60 to-brand-violet-500/40 rounded-full blur-[100px] animate-float dark:opacity-0" />
-        <div className="absolute top-40 right-10 w-[700px] h-[700px] bg-gradient-to-tl from-brand-mint-400/50 to-cyan-300/40 rounded-full blur-[90px] animate-float-delayed dark:opacity-0" style={{ animationDelay: '-5s' }} />
-        <div className="absolute bottom-20 left-1/4 w-[550px] h-[550px] bg-gradient-to-tr from-purple-400/50 to-brand-violet-400/45 rounded-full blur-[105px] animate-float-slow dark:opacity-0" style={{ animationDelay: '-10s' }} />
+        <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-gradient-to-br from-brand-violet-400/50 to-brand-violet-500/30 rounded-full blur-[120px] animate-float dark:opacity-0" />
+        <div className="absolute top-20 -right-40 w-[600px] h-[600px] bg-gradient-to-tl from-brand-mint-400/40 to-cyan-300/30 rounded-full blur-[110px] animate-float-delayed dark:opacity-0" style={{ animationDelay: '-5s' }} />
 
         {/* Floating shapes - DARK MODE */}
-        <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-brand-violet-500/40 rounded-full blur-[120px] animate-float opacity-0 dark:opacity-100" />
-        <div className="absolute top-40 right-10 w-[600px] h-[600px] bg-brand-mint-500/30 rounded-full blur-[100px] animate-float-delayed opacity-0 dark:opacity-100" style={{ animationDelay: '-5s' }} />
-        <div className="absolute bottom-20 left-1/4 w-[450px] h-[450px] bg-brand-violet-400/35 rounded-full blur-[110px] animate-float-slow opacity-0 dark:opacity-100" style={{ animationDelay: '-10s' }} />
+        <div className="absolute -top-40 -left-40 w-[450px] h-[450px] bg-brand-violet-500/35 rounded-full blur-[130px] animate-float opacity-0 dark:opacity-100" />
+        <div className="absolute top-20 -right-40 w-[550px] h-[550px] bg-brand-mint-500/25 rounded-full blur-[120px] animate-float-delayed opacity-0 dark:opacity-100" style={{ animationDelay: '-5s' }} />
 
         {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#8b5cf620_1px,transparent_1px),linear-gradient(to_bottom,#8b5cf620_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
@@ -55,17 +53,8 @@ export function Hero() {
           </div>
 
           {/* Logo showcase */}
-          <div className="relative flex items-center justify-center animate-slide-up overflow-visible">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-visible">
-              {/* Decorative background circles */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-violet-300/40 via-brand-violet-400/30 to-brand-violet-500/20 blur-3xl dark:from-brand-violet-600/50 dark:via-brand-violet-500/40 dark:to-brand-violet-700/30" />
-              <div className="absolute inset-12 rounded-full bg-gradient-to-tr from-brand-mint-400/20 to-brand-violet-400/30 blur-2xl dark:from-brand-mint-500/30 dark:to-brand-violet-500/40" />
-
-              {/* Logo Icon */}
-              <div className="relative z-10 flex h-full w-full items-center justify-center overflow-visible">
-                <WebyboxIcon className="w-48 h-auto md:w-64 drop-shadow-2xl transition-transform duration-300 hover:scale-105" />
-              </div>
-            </div>
+          <div className="relative flex items-center justify-center animate-slide-up">
+            <WebyboxIcon className="w-48 h-auto md:w-64 drop-shadow-2xl transition-transform duration-300 hover:scale-105" />
           </div>
         </div>
       </Container>

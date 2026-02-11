@@ -30,7 +30,7 @@ export function WebyboxIcon({ className = "" }: { className?: string }) {
           /* Hover glow effect */
           svg:hover .logo-light,
           svg:hover .logo-dark {
-            filter: drop-shadow(0 0 8px rgba(188, 150, 228, 0.6)) drop-shadow(0 0 16px rgba(188, 150, 228, 0.4));
+            filter: drop-shadow(0 0 12px rgba(188, 150, 228, 0.8)) drop-shadow(0 0 24px rgba(188, 150, 228, 0.6)) drop-shadow(0 0 36px rgba(188, 150, 228, 0.4));
           }
         `}
       </style>
