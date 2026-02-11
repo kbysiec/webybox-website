@@ -67,8 +67,8 @@ const config: Config = {
         },
         float: {
           "0%, 100%": { transform: "translateY(0) translateX(0)" },
-          "33%": { transform: "translateY(-30px) translateX(20px)" },
-          "66%": { transform: "translateY(-15px) translateX(-20px)" },
+          "33%": { transform: "translateY(-80px) translateX(60px)" },
+          "66%": { transform: "translateY(-40px) translateX(-60px)" },
         },
         "float-delayed": {
           "0%, 100%": { transform: "translateY(0) translateX(0)" },

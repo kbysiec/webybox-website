@@ -15,9 +15,6 @@ export function Hero() {
 
         {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#8b5cf620_1px,transparent_1px),linear-gradient(to_bottom,#8b5cf620_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
-
-        {/* Center spotlight */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[700px] bg-gradient-radial from-brand-violet-300/60 via-brand-violet-200/20 to-transparent dark:from-brand-violet-600/30 dark:via-brand-violet-500/5 dark:to-transparent" />
       </div>
 
       <Container>
