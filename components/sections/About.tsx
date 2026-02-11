@@ -1,11 +1,13 @@
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
 export function About() {
   return (
     <section id="about" className="py-16 md:py-24">
       <Container size="md">
-        <Card className="p-8 md:p-12">
+        <AnimateOnScroll>
+          <Card className="p-8 md:p-12">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-tight text-brand-ink-950 sm:text-4xl dark:text-white">
               About Webybox
@@ -82,6 +84,7 @@ export function About() {
             </div>
           </div>
         </Card>
+        </AnimateOnScroll>
       </Container>
     </section>
   );

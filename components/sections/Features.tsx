@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
+import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
 const features = [
   {
@@ -135,30 +136,34 @@ export function Features() {
     <section id="features" className="py-16 md:py-24">
       <Container>
         <div className="space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold tracking-tight text-brand-ink-950 sm:text-4xl dark:text-white">
-              What we do best
-            </h2>
-            <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-              Building modern applications with focus on quality, performance, and user experience.
-            </p>
-          </div>
+          <AnimateOnScroll>
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl font-bold tracking-tight text-brand-ink-950 sm:text-4xl dark:text-white">
+                What we do best
+              </h2>
+              <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+                Building modern applications with focus on quality, performance, and user experience.
+              </p>
+            </div>
+          </AnimateOnScroll>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, index) => (
-              <Card key={index} hover className="group">
-                <div className="space-y-4">
-                  <div className="inline-flex rounded-xl bg-brand-violet-100 p-3 text-brand-violet-600 transition-colors group-hover:bg-brand-violet-200 dark:bg-brand-violet-950 dark:text-brand-violet-400 dark:group-hover:bg-brand-violet-900">
-                    {feature.icon}
+              <AnimateOnScroll key={index} delay={index * 100}>
+                <Card hover className="group h-full">
+                  <div className="space-y-4">
+                    <div className="inline-flex rounded-xl bg-brand-violet-100 p-3 text-brand-violet-600 transition-colors group-hover:bg-brand-violet-200 dark:bg-brand-violet-950 dark:text-brand-violet-400 dark:group-hover:bg-brand-violet-900">
+                      {feature.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold text-brand-ink-950 dark:text-white">
+                      {feature.title}
+                    </h3>
+                    <p className="text-neutral-600 dark:text-neutral-400">
+                      {feature.description}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-semibold text-brand-ink-950 dark:text-white">
-                    {feature.title}
-                  </h3>
-                  <p className="text-neutral-600 dark:text-neutral-400">
-                    {feature.description}
-                  </p>
-                </div>
-              </Card>
+                </Card>
+              </AnimateOnScroll>
             ))}
           </div>
         </div>
