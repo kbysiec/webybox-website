@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
+  output: "export",
+  basePath: process.env.NODE_ENV === "production" ? "/webybox" : "",
   images: {
-    formats: ["image/avif", "image/webp"],
+    unoptimized: true,
   },
+  reactStrictMode: true,
 };
 
 export default nextConfig;
