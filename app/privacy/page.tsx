@@ -41,7 +41,7 @@ export default function PrivacyPage() {
                   Introduction
                 </h2>
                 <p className="text-neutral-600 dark:text-neutral-400">
-                  Webybox ("we", "our", or "us") is committed to protecting your
+                  Webybox (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your
                   privacy. This Privacy Policy explains how we collect, use, and
                   safeguard your information when you use our applications and
                   services.
@@ -148,7 +148,7 @@ export default function PrivacyPage() {
                 <p className="text-neutral-600 dark:text-neutral-400">
                   We may update this Privacy Policy from time to time. We will
                   notify you of any changes by posting the new Privacy Policy on
-                  this page and updating the "Last updated" date.
+                  this page and updating the &quot;Last updated&quot; date.
                 </p>
               </div>
 
