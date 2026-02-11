@@ -4,7 +4,7 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { WebyboxIcon } from "@/components/WebyboxIcon";
-import Image from "next/image";
+import { WebyboxName } from "@/components/WebyboxName";
 import { useEffect, useState } from "react";
 
 export function Header() {
@@ -35,14 +35,7 @@ export function Header() {
             aria-label="Webybox home"
           >
             <WebyboxIcon className="h-8 w-8" />
-            <Image
-              src="/name.svg"
-              alt="webybox"
-              width={100}
-              height={24}
-              className="h-8 w-auto"
-              priority
-            />
+            <WebyboxName className="h-8 w-auto" />
           </a>
 
           <div className="hidden items-center gap-8 md:flex">

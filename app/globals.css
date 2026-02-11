@@ -92,30 +92,4 @@
     animation: float-slow 30s ease-in-out infinite;
     animation-delay: -10s;
   }
-
-  @keyframes logo-float {
-    0%,
-    100% {
-      transform: translateY(0) rotate(0deg);
-    }
-    25% {
-      transform: translateY(-10px) rotate(2deg);
-    }
-    50% {
-      transform: translateY(-5px) rotate(-1deg);
-    }
-    75% {
-      transform: translateY(-12px) rotate(1deg);
-    }
-  }
-
-  .animate-logo-float {
-    animation: logo-float 6s ease-in-out infinite;
-    transition: transform 0.3s ease;
-  }
-
-  .animate-logo-float:hover {
-    animation-play-state: paused;
-    transform: scale(1.05) !important;
-  }
 }

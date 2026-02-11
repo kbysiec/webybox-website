@@ -12,11 +12,11 @@ export function WebyboxIcon({ className = "" }: { className?: string }) {
         {`
           .logo-light {
             fill: #BC96E4;
-            transition: fill 0.3s ease;
+            transition: all 0.3s ease;
           }
           .logo-dark {
             fill: #341C4D;
-            transition: fill 0.3s ease;
+            transition: all 0.3s ease;
           }
 
           @media (prefers-color-scheme: dark) {
@@ -27,19 +27,10 @@ export function WebyboxIcon({ className = "" }: { className?: string }) {
           .dark .logo-light { fill: #BC96E4; }
           .dark .logo-dark { fill: #BC96E4; }
 
-          /* Hover effect */
-          svg:hover .logo-light {
-            fill: #D4B5F0;
-          }
+          /* Hover glow effect */
+          svg:hover .logo-light,
           svg:hover .logo-dark {
-            fill: #BC96E4;
-          }
-
-          .dark svg:hover .logo-light {
-            fill: #D4B5F0;
-          }
-          .dark svg:hover .logo-dark {
-            fill: #D4B5F0;
+            filter: drop-shadow(0 0 8px rgba(188, 150, 228, 0.6)) drop-shadow(0 0 16px rgba(188, 150, 228, 0.4));
           }
         `}
       </style>

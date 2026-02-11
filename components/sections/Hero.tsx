@@ -63,7 +63,7 @@ export function Hero() {
 
               {/* Logo Icon */}
               <div className="relative z-10 flex h-full w-full items-center justify-center">
-                <WebyboxIcon className="w-48 h-auto md:w-64 drop-shadow-2xl animate-logo-float" />
+                <WebyboxIcon className="w-48 h-auto md:w-64 drop-shadow-2xl transition-transform duration-300 hover:scale-105" />
               </div>
             </div>
           </div>
