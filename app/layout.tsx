@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     "app development",
   ],
   authors: [{ name: "Webybox", url: "https://webybox.com" }],
+  metadataBase: new URL("https://webybox.com"),
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Webybox",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -25,28 +32,12 @@ export const metadata: Metadata = {
     description:
       "Creating beautiful mobile and web applications with attention to detail, clean UX, and modern technology.",
     siteName: "Webybox",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Webybox",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Webybox - Indie Dev Studio",
     description:
       "Creating beautiful mobile and web applications with attention to detail, clean UX, and modern technology.",
-    images: ["/og-image.png"],
-  },
-  icons: {
-    icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 

@@ -1,0 +1,22 @@
+{
+  "name": "Webybox",
+  "short_name": "Webybox",
+  "description": "Indie dev studio crafting digital experiences",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0e12",
+  "theme_color": "#BC96E4",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
